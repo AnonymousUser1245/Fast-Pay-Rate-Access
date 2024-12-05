@@ -95,4 +95,3 @@ Once loaded, the award is organized into three columns showing Classifications (
 Clicking on sections expands them to show detailed information. Here you can see the expanded pay rates table with age-based rates and different time periods. The search feature helps quickly locate specific information within any schedule. 
 =======
 This tool transforms the way HR professionals access Fair Work pay rates, making it faster and more efficient while maintaining absolute accuracy through direct source integration. 
->>>>>>> 19e760766d0b53c19277ff0cb6d74d9d8224bb8a

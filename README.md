@@ -4,6 +4,8 @@ Instantly access pay rates, classifications, and allowances across all Fair Work
 
 👉 [Learn how it works in detail](HOW_IT_WORKS.md)
 
+👉 [Demo](https://67516c3e6e19bbf90709ce7b--rad-starship-8a17f6.netlify.app/)
+
 ## Why This Solution?
 
 The current PACT calculator, while functional, has several limitations:
@@ -75,6 +77,7 @@ Instant access to:
 - Compatible with all awards
 - Always current information
 
+<<<<<<< HEAD
 This tool transforms the way HR professionals access Fair Work pay rates, making it faster and more efficient while maintaining absolute accuracy through direct source integration.
 
 ## Screenshots
@@ -90,3 +93,6 @@ Once loaded, the award is organized into three columns showing Classifications (
 ### Expanded View
 ![Expanded Content](expanded.png)
 Clicking on sections expands them to show detailed information. Here you can see the expanded pay rates table with age-based rates and different time periods. The search feature helps quickly locate specific information within any schedule. 
+=======
+This tool transforms the way HR professionals access Fair Work pay rates, making it faster and more efficient while maintaining absolute accuracy through direct source integration. 
+>>>>>>> 19e760766d0b53c19277ff0cb6d74d9d8224bb8a

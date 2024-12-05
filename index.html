@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Pay Rate Access - Fair Work Award Pay Rates Viewer</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fast Pay Rate Access</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter Award ID (e.g., MA000009)">
+            <button class="view-button" onclick="viewAward()">View</button>
+            <div class="cache-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="cacheToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="cache-label">Use Cache</span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="welcome">
+            <h2>Welcome to Fast Pay Rate Access</h2>
+            <p class="intro">Instantly access pay rates, classifications, and allowances across all Fair Work awards. No more waiting for calculators to process - get the information you need immediately.</p>
+
+            <div class="section">
+                <h3>Why This Solution?</h3>
+                <p>The current PACT calculator, while functional, has several limitations:</p>
+                <ul>
+                    <li>Long processing times that increase with each award lookup</li>
+                    <li>Must restart the entire process to change a single input</li>
+                    <li>Restricted to specific calculation paths</li>
+                    <li>Time-consuming for batch processing</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Performance Comparison</h3>
+                <img src="Comparison%20Of%20Time%20To%20Process%20Awards.png" alt="Performance Comparison" style="max-width: 100%; margin: 20px 0;">
+                
+                <h4>Single Pay Rate Lookup</h4>
+                <p>Looking up a pay rate for: Level 2 - Year 2, 16-year-old casual (Monday-Friday)</p>
+                <ul>
+                    <li>Award Viewer: 17 seconds</li>
+                    <li>PACT Calculator: 36 seconds</li>
+                    <li>Time Saved: 19 seconds (53% faster)</li>
+                </ul>
+
+                <h4>Multiple Pay Rate Lookups</h4>
+                <p>Looking up four different pay rates in succession:</p>
+                <ol>
+                    <li>Level 2 - Year 2, 16-year-old casual (Monday-Friday)</li>
+                    <li>Level 2 - Year 2, 17-year-old casual (Monday-Friday)</li>
+                    <li>Level 2 - Year 1, 16-year-old full time (Monday-Friday)</li>
+                    <li>Call centre principal customer contact specialist, adult full time (Monday-Friday)</li>
+                </ol>
+                <p>Results:</p>
+                <ul>
+                    <li>Award Viewer: 1 minute 12 seconds</li>
+                    <li>PACT Calculator: 3 minutes 21 seconds</li>
+                    <li>Time Saved: 2 minutes 9 seconds (64% faster)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>What You Get</h3>
+                <p>Instant access to:</p>
+                <ul>
+                    <li>Classification descriptions</li>
+                    <li>Hourly pay rates</li>
+                    <li>Monetary allowances</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Key Features</h3>
+                
+                <h4>Fast, Efficient Access</h4>
+                <ul>
+                    <li>Easy navigation between and within schedules</li>
+                    <li>Real-time search within content</li>
+                    <li>Quick navigation between search matches</li>
+                    <li>Expandable/collapsible sections for better readability</li>
+                </ul>
+
+                <h4>Smart Caching System</h4>
+                <ul>
+                    <li>Toggle between cached and fresh data</li>
+                    <li>24-hour cache validity</li>
+                    <li>Clear visual indicators showing data source (cached/fresh)</li>
+                    <li>Faster repeat lookups while maintaining data accuracy</li>
+                </ul>
+
+                <h4>Direct Source Integration</h4>
+                <ul>
+                    <li>Links to official Fair Work website for verification</li>
+                    <li>Guaranteed accuracy through direct source access</li>
+                    <li>Works with all awards</li>
+                    <li>Always up-to-date information</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Benefits for HR</h3>
+                <ul>
+                    <li>Instant pay rate lookups</li>
+                    <li>Guaranteed accuracy with direct Fair Work source integration</li>
+                    <li>Peace of mind with easy verification via Fair Work website</li>
+                    <li>Compatible with all awards</li>
+                    <li>Always current information</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/html2json.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+</html> 

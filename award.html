@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Award Viewer</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Award Viewer</h1>
+        <div class="award-header-container">
+            <div class="award-header"></div>
+            <span class="data-source"></span>
+            <a id="fairWorkLink" href="#" target="_blank" class="fair-work-button">View On Fair Work Website</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter Award ID (e.g., MA000009)">
+            <button class="view-button" onclick="viewAward()">View</button>
+            <div class="cache-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="cacheToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="cache-label">Use Cache</span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="award-content">
+            <div id="loading" style="text-align: center; padding: 2rem;">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">Starting fetch...</div>
+                    <div class="progress-percentage">0%</div>
+                </div>
+            </div>
+            <div id="error" style="text-align: center; padding: 2rem; color: red; display: none;">
+                Error loading award data. Please try again.
+            </div>
+            <div id="schedules" class="schedules-container" style="display: none;">
+                <div class="schedule-column">
+                    <div class="schedule-search">
+                        <input type="text" class="schedule-search-input" placeholder="Search Schedule A...">
+                        <div class="search-controls">
+                            <span class="match-count"></span>
+                            <button class="prev-match">▲</button>
+                            <button class="next-match">▼</button>
+                            <button class="collapse-all">Collapse All</button>
+                        </div>
+                    </div>
+                    <div id="schedule-a"></div>
+                </div>
+                <div class="schedule-column">
+                    <div class="schedule-search">
+                        <input type="text" class="schedule-search-input" placeholder="Search Schedule B...">
+                        <div class="search-controls">
+                            <span class="match-count"></span>
+                            <button class="prev-match">▲</button>
+                            <button class="next-match">▼</button>
+                            <button class="collapse-all">Collapse All</button>
+                        </div>
+                    </div>
+                    <div id="schedule-b"></div>
+                </div>
+                <div class="schedule-column">
+                    <div class="schedule-search">
+                        <input type="text" class="schedule-search-input" placeholder="Search Schedule C...">
+                        <div class="search-controls">
+                            <span class="match-count"></span>
+                            <button class="prev-match">▲</button>
+                            <button class="next-match">▼</button>
+                            <button class="collapse-all">Collapse All</button>
+                        </div>
+                    </div>
+                    <div id="schedule-c"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/html2json.js"></script>
+    <script src="static/js/main.js"></script>
+    <script>
+        // Get award ID from URL hash
+        const awardId = window.location.hash.slice(1); // Remove the # from the start
+        if (awardId) {
+            document.getElementById('searchInput').value = awardId;
+            loadAwardData();
+        }
+
+        // Handle hash changes
+        window.addEventListener('hashchange', function() {
+            const newAwardId = window.location.hash.slice(1);
+            if (newAwardId) {
+                document.getElementById('searchInput').value = newAwardId;
+                loadAwardData();
+            }
+        });
+    </script>
+</body>
+</html> 

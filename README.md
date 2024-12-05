@@ -4,6 +4,8 @@ Instantly access pay rates, classifications, and allowances across all Fair Work
 
 👉 [Learn how it works in detail](HOW_IT_WORKS.md)
 
+👉 [Demo](https://67516c3e6e19bbf90709ce7b--rad-starship-8a17f6.netlify.app/)
+
 ## Why This Solution?
 
 The current PACT calculator, while functional, has several limitations:

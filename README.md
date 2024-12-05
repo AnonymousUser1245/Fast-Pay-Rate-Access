@@ -75,4 +75,18 @@ Instant access to:
 - Compatible with all awards
 - Always current information
 
-This tool transforms the way HR professionals access Fair Work pay rates, making it faster and more efficient while maintaining absolute accuracy through direct source integration. 
+This tool transforms the way HR professionals access Fair Work pay rates, making it faster and more efficient while maintaining absolute accuracy through direct source integration.
+
+## Screenshots
+
+### Initial Load
+![Loading Screen](loading.png)
+The loading screen shows a progress bar and clear status while fetching award data. The cache toggle and Fair Work verification link are always accessible.
+
+### Award Overview
+![Loaded Award](loaded.png)
+Once loaded, the award is organized into three columns showing Classifications (Schedule A), Pay Rates (Schedule B), and Allowances (Schedule C). Each section has its own search functionality and navigation controls.
+
+### Expanded View
+![Expanded Content](expanded.png)
+Clicking on sections expands them to show detailed information. Here you can see the expanded pay rates table with age-based rates and different time periods. The search feature helps quickly locate specific information within any schedule. 
